@@ -1,0 +1,296 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2025840400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the techfios login page",
+            "match": {
+              "location": "steps.StepsDefination.user_is_on_the_techfios_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-31T14:48:25.288Z",
+        "line": 8,
+        "name": "User should be able to login with valid credentials",
+        "description": "",
+        "id": "techfios-billing-login-page-functionality-vallidation;user-should-be-able-to-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1166171200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters username as \"demo@techfios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"demo@techfios.com\"",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.StepsDefination.user_enters_username_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1101142900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters password as \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc123\"",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.StepsDefination.user_enters_password_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1804642100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on sign in button",
+            "match": {
+              "location": "steps.StepsDefination.user_clicks_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3021262200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should land on dashboard page",
+            "match": {
+              "location": "steps.StepsDefination.user_should_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3072024700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User clicks on bankCash",
+            "match": {
+              "location": "steps.StepsDefination.user_clicks_on_bankCash()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1356722100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User clicks on newAccount",
+            "match": {
+              "location": "steps.StepsDefination.user_clicks_on_newAccount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 173878000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters accountTitle as \"Chandra\u0027s Saving\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Chandra\u0027s Saving\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.StepsDefination.user_enters_accountTitle_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 208949200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enters description as \"Long term emergency fund\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Long term emergency fund\"",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.StepsDefination.user_enters_description_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98620000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enters initialBalance \"1000000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1000000\"",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.StepsDefination.user_enters_initialBalance(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90975400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enters accountNumber as \"54123789\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"54123789\"",
+                  "offset": 29
+                }
+              ],
+              "location": "steps.StepsDefination.user_enters_accountNumber_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79954100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enters contactPerson to \"Chandra\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Chandra\"",
+                  "offset": 29
+                }
+              ],
+              "location": "steps.StepsDefination.user_enters_contactPerson_to(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90406100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User enters phoneNumber as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.StepsDefination.user_enters_phoneNumber_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113934100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enters internetBankingURL as \"https://chandrax.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://chandrax.com\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.StepsDefination.user_enters_internetBankingURL_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 334442900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User clicks on submit",
+            "match": {
+              "location": "steps.StepsDefination.user_clicks_on_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3191189100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User should land on accounts page",
+            "match": {
+              "location": "steps.StepsDefination.user_should_land_on_accounts_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Techfios billing login page functionality vallidation",
+    "description": "",
+    "id": "techfios-billing-login-page-functionality-vallidation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CreatingBankAndCashAccount.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
