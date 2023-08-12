@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2025840400,
+              "duration": 851579800,
               "status": "passed"
             },
             "line": 5,
@@ -24,267 +24,349 @@
         ]
       },
       {
-        "start_timestamp": "2023-07-31T14:48:25.288Z",
-        "line": 8,
+        "start_timestamp": "2023-08-12T03:08:04.547Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1305093300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.StepsDefination.setup()"
+            }
+          }
+        ],
+        "line": 29,
         "name": "User should be able to login with valid credentials",
-        "description": "",
-        "id": "techfios-billing-login-page-functionality-vallidation;user-should-be-able-to-login-with-valid-credentials",
+        "description": "    and open a new account",
+        "id": "techfios-other-billing-login-page-functionality-validation;user-should-be-able-to-login-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 150022900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.StepsDefination.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1166171200,
+              "duration": 1126910200,
               "status": "passed"
             },
-            "line": 9,
-            "name": "User enters username as \"demo@techfios.com\"",
+            "line": 11,
+            "name": "User enters the \"demo@techfios.com\" in the \"username\" field",
             "match": {
               "arguments": [
                 {
                   "val": "\"demo@techfios.com\"",
-                  "offset": 24
+                  "offset": 16
+                },
+                {
+                  "val": "\"username\"",
+                  "offset": 43
                 }
               ],
-              "location": "steps.StepsDefination.user_enters_username_as(java.lang.String)"
+              "location": "steps.StepsDefination.user_enters_the_in_the_field(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1101142900,
+              "duration": 1115058900,
               "status": "passed"
             },
-            "line": 10,
-            "name": "User enters password as \"abc123\"",
+            "line": 12,
+            "name": "User enters the \"abc123\" in the \"password\" field",
             "match": {
               "arguments": [
                 {
                   "val": "\"abc123\"",
-                  "offset": 24
+                  "offset": 16
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 32
                 }
               ],
-              "location": "steps.StepsDefination.user_enters_password_as(java.lang.String)"
+              "location": "steps.StepsDefination.user_enters_the_in_the_field(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1804642100,
+              "duration": 1981973100,
               "status": "passed"
             },
-            "line": 11,
-            "name": "User clicks on sign in button",
+            "line": 13,
+            "name": "User clicks on \"login\"",
             "match": {
-              "location": "steps.StepsDefination.user_clicks_on_sign_in_button()"
+              "arguments": [
+                {
+                  "val": "\"login\"",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.StepsDefination.user_clicks_on(java.lang.String)"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 3021262200,
+              "duration": 3015311700,
               "status": "passed"
             },
-            "line": 12,
-            "name": "User should land on dashboard page",
+            "line": 14,
+            "name": "User should land on Dashboard page",
             "match": {
-              "location": "steps.StepsDefination.user_should_land_on_dashboard_page()"
+              "location": "steps.StepsDefination.user_should_land_on_Dashboard_page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 3072024700,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User clicks on bankCash",
-            "match": {
-              "location": "steps.StepsDefination.user_clicks_on_bankCash()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1356722100,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User clicks on newAccount",
-            "match": {
-              "location": "steps.StepsDefination.user_clicks_on_newAccount()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 173878000,
+              "duration": 3120266000,
               "status": "passed"
             },
             "line": 15,
-            "name": "User enters accountTitle as \"Chandra\u0027s Saving\"",
+            "name": "User clickss on \"bankCash\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bankCash\"",
+                  "offset": 16
+                }
+              ],
+              "location": "steps.StepsDefination.user_clickss_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1347215800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User clickss on \"newAccount\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"newAccount\"",
+                  "offset": 16
+                }
+              ],
+              "location": "steps.StepsDefination.user_clickss_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1167167400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enters \"Chandra\u0027s Saving\" in the \"accountTitle\" field in accounts page",
             "match": {
               "arguments": [
                 {
                   "val": "\"Chandra\u0027s Saving\"",
-                  "offset": 28
+                  "offset": 12
+                },
+                {
+                  "val": "\"accountTitle\"",
+                  "offset": 38
                 }
               ],
-              "location": "steps.StepsDefination.user_enters_accountTitle_as(java.lang.String)"
+              "location": "steps.StepsDefination.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 208949200,
+              "duration": 96023500,
               "status": "passed"
             },
-            "line": 16,
-            "name": "User enters description as \"Long term emergency fund\"",
+            "line": 18,
+            "name": "User enters \"Emergency fund!\" in the \"description\" field in accounts page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Long term emergency fund\"",
-                  "offset": 27
+                  "val": "\"Emergency fund!\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"description\"",
+                  "offset": 37
                 }
               ],
-              "location": "steps.StepsDefination.user_enters_description_as(java.lang.String)"
+              "location": "steps.StepsDefination.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 98620000,
+              "duration": 86652800,
               "status": "passed"
             },
-            "line": 17,
-            "name": "User enters initialBalance \"1000000\"",
+            "line": 19,
+            "name": "User enters \"1000000\" in the \"initialBalance\" field in accounts page",
             "match": {
               "arguments": [
                 {
                   "val": "\"1000000\"",
-                  "offset": 27
-                }
-              ],
-              "location": "steps.StepsDefination.user_enters_initialBalance(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 90975400,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User enters accountNumber as \"54123789\"",
-            "match": {
-              "arguments": [
+                  "offset": 12
+                },
                 {
-                  "val": "\"54123789\"",
+                  "val": "\"initialBalance\"",
                   "offset": 29
                 }
               ],
-              "location": "steps.StepsDefination.user_enters_accountNumber_as(java.lang.String)"
+              "location": "steps.StepsDefination.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 79954100,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "User enters contactPerson to \"Chandra\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Chandra\"",
-                  "offset": 29
-                }
-              ],
-              "location": "steps.StepsDefination.user_enters_contactPerson_to(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 90406100,
+              "duration": 88250800,
               "status": "passed"
             },
             "line": 20,
-            "name": "User enters phoneNumber as \"\"",
+            "name": "User enters \"300000\" in the \"accountNumber\" field in accounts page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"300000\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"accountNumber\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.StepsDefination.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 86946900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enters \"ChandraX\" in the \"contactPerson\" field in accounts page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ChandraX\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"contactPerson\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.StepsDefination.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90832800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User enters \"\" in the \"Phone\" field in accounts page",
             "match": {
               "arguments": [
                 {
                   "val": "\"\"",
-                  "offset": 27
+                  "offset": 12
+                },
+                {
+                  "val": "\"Phone\"",
+                  "offset": 22
                 }
               ],
-              "location": "steps.StepsDefination.user_enters_phoneNumber_as(java.lang.String)"
+              "location": "steps.StepsDefination.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 113934100,
+              "duration": 109944900,
               "status": "passed"
             },
-            "line": 21,
-            "name": "User enters internetBankingURL as \"https://chandrax.com\"",
+            "line": 23,
+            "name": "User enters \"https://chandrax.com\" in the \"internetBankingURL\" field in accounts page",
             "match": {
               "arguments": [
                 {
                   "val": "\"https://chandrax.com\"",
-                  "offset": 34
+                  "offset": 12
+                },
+                {
+                  "val": "\"internetBankingURL\"",
+                  "offset": 42
                 }
               ],
-              "location": "steps.StepsDefination.user_enters_internetBankingURL_as(java.lang.String)"
+              "location": "steps.StepsDefination.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 334442900,
+              "duration": 362713600,
               "status": "passed"
             },
-            "line": 22,
-            "name": "User clicks on submit",
+            "line": 24,
+            "name": "User clicksss on \"submit\"",
             "match": {
-              "location": "steps.StepsDefination.user_clicks_on_submit()"
+              "arguments": [
+                {
+                  "val": "\"submit\"",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.StepsDefination.user_clicksss_on(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3191189100,
+              "duration": 3283820800,
               "status": "passed"
             },
-            "line": 23,
-            "name": "User should land on accounts page",
+            "line": 25,
+            "name": "User should be able to validate account created successfully",
             "match": {
-              "location": "steps.StepsDefination.user_should_land_on_accounts_page()"
+              "location": "steps.StepsDefination.user_should_be_able_to_validate_account_created_successfully()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Regression"
+            "name": "@BankAndCash"
           },
           {
-            "name": "@Sanity"
+            "name": "@Scenerio1"
           }
         ]
       }
     ],
-    "name": "Techfios billing login page functionality vallidation",
+    "name": "Techfios Other billing login page functionality validation",
     "description": "",
-    "id": "techfios-billing-login-page-functionality-vallidation",
+    "id": "techfios-other-billing-login-page-functionality-validation",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/CreatingBankAndCashAccount.feature",
     "tags": [
       {
-        "name": "@Regression",
+        "name": "@BankAndCash",
         "type": "Tag",
         "location": {
           "line": 1,

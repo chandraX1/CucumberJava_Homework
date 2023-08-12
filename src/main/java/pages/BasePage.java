@@ -13,7 +13,7 @@ public class BasePage {
 	public static void initDriver() {
 		System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -33,7 +33,7 @@ public class BasePage {
 
 	public int randomPhone(int bound) {
 		Random rnd = new Random();
-		long randomPh = 2143250000 + rnd.nextInt(9999);
+		long randomPh = 2140000000 + rnd.nextInt(9999);
 		return (int) randomPh;
 	}
 

@@ -1,11 +1,114 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/CreatingBankAndCashAccount.feature");
 formatter.feature({
-  "name": "Techfios billing login page functionality vallidation",
+  "name": "Techfios Other billing login page functionality validation",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@Regression"
+      "name": "@BankAndCash"
+    }
+  ]
+});
+formatter.scenarioOutline({
+  "name": "User should be able to login with valid credentials",
+  "description": "    and open a new account",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Scenerio1"
+    }
+  ]
+});
+formatter.step({
+  "name": "User enters the \"\u003cusername\u003e\" in the \"username\" field",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "User enters the \"\u003cpassword\u003e\" in the \"password\" field",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "User clicks on \"login\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "User should land on Dashboard page",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User clickss on \"bankCash\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "User clickss on \"newAccount\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "User enters \"\u003caccountTitle\u003e\" in the \"accountTitle\" field in accounts page",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "User enters \"\u003cdescription\u003e\" in the \"description\" field in accounts page",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "User enters \"\u003cinitialBalance\u003e\" in the \"initialBalance\" field in accounts page",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "User enters \"\u003caccountNumber\u003e\" in the \"accountNumber\" field in accounts page",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "User enters \"\u003ccontactPerson\u003e\" in the \"contactPerson\" field in accounts page",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "User enters \"\u003cPhone\u003e\" in the \"Phone\" field in accounts page",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "User enters \"\u003cinternetBankingURL\u003e\" in the \"internetBankingURL\" field in accounts page",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "User clicksss on \"submit\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "User should be able to validate account created successfully",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "password",
+        "accountTitle",
+        "description",
+        "initialBalance",
+        "accountNumber",
+        "contactPerson",
+        "Phone",
+        "internetBankingURL"
+      ]
+    },
+    {
+      "cells": [
+        "demo@techfios.com",
+        "abc123",
+        "Chandra\u0027s Saving",
+        "Emergency fund!",
+        "1000000",
+        "300000",
+        "ChandraX",
+        "",
+        "https://chandrax.com"
+      ]
     }
   ]
 });
@@ -13,6 +116,9 @@ formatter.background({
   "name": "",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User is on the techfios login page",
@@ -26,165 +132,168 @@ formatter.result({
 });
 formatter.scenario({
   "name": "User should be able to login with valid credentials",
-  "description": "",
-  "keyword": "Scenario",
+  "description": "    and open a new account",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Regression"
+      "name": "@BankAndCash"
     },
     {
-      "name": "@Sanity"
+      "name": "@Scenerio1"
     }
   ]
 });
 formatter.step({
-  "name": "User enters username as \"demo@techfios.com\"",
+  "name": "User enters the \"demo@techfios.com\" in the \"username\" field",
   "keyword": "When "
 });
 formatter.match({
-  "location": "steps.StepsDefination.user_enters_username_as(java.lang.String)"
+  "location": "steps.StepsDefination.user_enters_the_in_the_field(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User enters password as \"abc123\"",
+  "name": "User enters the \"abc123\" in the \"password\" field",
   "keyword": "When "
 });
 formatter.match({
-  "location": "steps.StepsDefination.user_enters_password_as(java.lang.String)"
+  "location": "steps.StepsDefination.user_enters_the_in_the_field(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks on sign in button",
-  "keyword": "When "
+  "name": "User clicks on \"login\"",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "steps.StepsDefination.user_clicks_on_sign_in_button()"
+  "location": "steps.StepsDefination.user_clicks_on(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should land on dashboard page",
+  "name": "User should land on Dashboard page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "steps.StepsDefination.user_should_land_on_dashboard_page()"
+  "location": "steps.StepsDefination.user_should_land_on_Dashboard_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks on bankCash",
+  "name": "User clickss on \"bankCash\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "steps.StepsDefination.user_clicks_on_bankCash()"
+  "location": "steps.StepsDefination.user_clickss_on(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks on newAccount",
+  "name": "User clickss on \"newAccount\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "steps.StepsDefination.user_clicks_on_newAccount()"
+  "location": "steps.StepsDefination.user_clickss_on(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User enters accountTitle as \"Chandra\u0027s Saving\"",
+  "name": "User enters \"Chandra\u0027s Saving\" in the \"accountTitle\" field in accounts page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "steps.StepsDefination.user_enters_accountTitle_as(java.lang.String)"
+  "location": "steps.StepsDefination.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User enters description as \"Long term emergency fund\"",
+  "name": "User enters \"Emergency fund!\" in the \"description\" field in accounts page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "steps.StepsDefination.user_enters_description_as(java.lang.String)"
+  "location": "steps.StepsDefination.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User enters initialBalance \"1000000\"",
+  "name": "User enters \"1000000\" in the \"initialBalance\" field in accounts page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "steps.StepsDefination.user_enters_initialBalance(java.lang.String)"
+  "location": "steps.StepsDefination.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User enters accountNumber as \"54123789\"",
+  "name": "User enters \"300000\" in the \"accountNumber\" field in accounts page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "steps.StepsDefination.user_enters_accountNumber_as(java.lang.String)"
+  "location": "steps.StepsDefination.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User enters contactPerson to \"Chandra\"",
+  "name": "User enters \"ChandraX\" in the \"contactPerson\" field in accounts page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "steps.StepsDefination.user_enters_contactPerson_to(java.lang.String)"
+  "location": "steps.StepsDefination.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User enters phoneNumber as \"\"",
+  "name": "User enters \"\" in the \"Phone\" field in accounts page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "steps.StepsDefination.user_enters_phoneNumber_as(java.lang.String)"
+  "location": "steps.StepsDefination.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User enters internetBankingURL as \"https://chandrax.com\"",
+  "name": "User enters \"https://chandrax.com\" in the \"internetBankingURL\" field in accounts page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "steps.StepsDefination.user_enters_internetBankingURL_as(java.lang.String)"
+  "location": "steps.StepsDefination.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks on submit",
+  "name": "User clicksss on \"submit\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "steps.StepsDefination.user_clicks_on_submit()"
+  "location": "steps.StepsDefination.user_clicksss_on(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should land on accounts page",
+  "name": "User should be able to validate account created successfully",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "steps.StepsDefination.user_should_land_on_accounts_page()"
+  "location": "steps.StepsDefination.user_should_be_able_to_validate_account_created_successfully()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });

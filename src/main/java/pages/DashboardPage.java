@@ -33,6 +33,12 @@ public class DashboardPage {
 	@FindBy(how = How.XPATH, using = "//button[normalize-space()='Submit']")
 	WebElement ClickSubmit;
 
+	
+	public String getPageTitleDb() {
+		return driver.getTitle();
+	}
+	
+	
 	public void clickBankCash() {
 		Bank_Cash.click();
 		try {
@@ -53,6 +59,11 @@ public class DashboardPage {
 
 	public void insertAccountTitle(String accountTitle) {
 		AccountTitle.sendKeys(accountTitle);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void insertDescription(String description) {

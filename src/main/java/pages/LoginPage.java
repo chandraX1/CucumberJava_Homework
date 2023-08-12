@@ -21,9 +21,8 @@ public class LoginPage {
 	@FindBy(how = How.XPATH, using = "//button[@name='login']")
 	WebElement SignInButton;
 
-	// Methods to interact with the elements
-	public void enterUserName(String userName) {
-		UserName.sendKeys(userName);
+	public void enterUserName(String username) {
+		UserName.sendKeys(username);
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
@@ -50,7 +49,5 @@ public class LoginPage {
 		}
 	}
 
-	public String getPageTitle() {
-		return driver.getTitle();
-	}
+
 }
